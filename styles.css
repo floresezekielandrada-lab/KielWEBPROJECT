@@ -335,3 +335,114 @@ p, .page-section p, .card p, .hero-text p{font-size:1.1rem}
   .modal-overlay{padding:8px 36px}
   .modal-nav{width:32px;height:32px;font-size:1rem}
 }
+
+/* ============================================
+   PEROFRMANCE FIX - Smooth Scroll Fix
+   Remove lag, keep design
+   ============================================ */
+
+/* Reduce heavy background on all devices */
+body::before {
+  animation: none !important;
+  opacity: 0.7;
+  background: radial-gradient(circle at 20% 10%, rgba(255, 235, 200, 0.08), transparent 28%), radial-gradient(circle at 85% 18%, rgba(255, 218, 175, 0.06), transparent 24%);
+}
+
+/* Remove 3D transforms that cause lag */
+.logo-scene {
+  transform: none !important;
+  transition: transform 0.2s ease;
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.3);
+}
+
+.logo-scene img {
+  transform: none !important;
+  transition: none;
+}
+
+/* Simplify card hover effects */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(212, 163, 115, 0.15);
+}
+
+.card::before {
+  display: none;
+}
+
+/* Simplify Netflix card */
+.card.netflix {
+  transition: box-shadow 0.2s ease;
+}
+
+.card.netflix:hover {
+  transform: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+}
+
+.card.netflix:hover .gallery-photo img {
+  transform: none;
+  animation: none;
+}
+
+/* Simplify social button */
+.social-btn {
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.social-btn:hover {
+  transform: translateY(-2px);
+  rotate: none;
+}
+
+/* Optimize scrolling */
+html {
+  -webkit-overflow-scrolling: touch;
+  scroll-behavior: smooth;
+}
+
+/* Smooth scroll for anchor links */
+a, .nav-link, button {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* ============================================
+   MOBILE PERFORMANCE
+   ============================================ */
+
+@media (max-width: 760px) {
+  body::before {
+    opacity: 0.5;
+  }
+  
+  .logo-scene {
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.35);
+  }
+  
+  .card.netflix:hover {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+  }
+  
+  .hero-visual {
+    transform: none;
+  }
+}
+
+/* Optional: Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
