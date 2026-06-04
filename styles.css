@@ -178,95 +178,160 @@ p, .page-section p, .card p, .hero-text p{font-size:1.1rem}
 #booking-form button.button-primary{margin-top:8px}
 
 @media (max-width:1000px){
-  .navbar{padding:14px 18px;border-radius:16px}
-  .nav-menu{flex-wrap:wrap;justify-content:center;gap:10px}
-  .nav-link{padding:10px 14px;font-size:1rem}
-  .hero{padding:36px 22px}
-  .hero-inner{flex-direction:column-reverse;gap:20px}
+  .navbar{max-width:1200px;padding:14px 20px;border-radius:14px;margin:0 auto 20px}
+  .nav-menu{gap:10px;justify-content:center}
+  .nav-link{padding:10px 16px;font-size:0.95rem;border-radius:10px}
+  .hero-inner{flex-direction:column-reverse;gap:24px;align-items:center;text-align:center;width:100%;max-width:100%}
+  .hero-text{width:100%;max-width:100%}
+  .hero-text h1{font-size:2.8rem}
+  .hero-text p{font-size:1.1rem}
+  .hero-cta{justify-content:center;width:100%;max-width:320px;margin:0 auto}
   .hero-visual{width:300px}
-  .hero-text h1{font-size:3.1rem}
-  .content-wrapper{padding:28px;margin-top:24px}
-  .page-section{padding:22px;margin-top:32px}
-  .gallery-strip{padding:0}
-  .gallery-carousel{gap:12px}
-  .card.netflix{flex:0 0 250px;width:250px;min-width:250px;height:360px}
-  .card.netflix:first-child{flex:0 0 300px;width:300px;min-width:300px}
+  .logo-scene{width:280px;height:280px;border-radius:28px}
+  .content-wrapper{padding:24px 18px;margin-top:20px}
+  .page-section{padding:22px;margin-top:26px;border-radius:16px}
+  .gallery-carousel{gap:14px;padding:12px 4px 18px}
+  .card.netflix{flex:0 0 240px;width:240px;min-width:240px;height:340px}
+  .card.netflix:first-child{flex:0 0 320px;width:320px;min-width:320px}
 }
+
 @media (max-width:760px){
-  .nav-menu{gap:8px}
-  .nav-link{min-width:calc(40% - 8px);width:auto;padding:10px 12px}
-  .hero-visual{width:240px}
-  .hero-text h1{font-size:2.5rem}
-  .hero-text{max-width:100%}
-  .gallery-strip{padding:0}
-  .modal-overlay{padding:20px 56px}
-  .modal-nav{width:48px;height:48px;font-size:1.6rem}
-  .gallery-carousel{padding:10px 0 16px}
-  .card.netflix{flex:0 0 220px;width:220px;min-width:220px;height:330px}
+  .navbar{padding:12px 18px;border-radius:12px;margin-bottom:16px}
+  .nav-menu{gap:8px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:0 4px}
+  .nav-menu::-webkit-scrollbar{display:none}
+  .nav-link{padding:8px 14px;font-size:0.9rem;border-radius:8px;white-space:nowrap;flex-shrink:0}
+  .brand{font-size:1.3rem}
+  .hero{padding:28px 18px}
+  .hero-inner{gap:20px}
+  .hero-visual{width:260px}
+  .logo-scene{width:240px;height:240px;border-radius:24px}
+  .hero-text h1{font-size:2.4rem;line-height:1.15}
+  .hero-text p{font-size:1.05rem;margin-bottom:18px}
+  .hero-cta{gap:12px;max-width:300px}
+  .button-primary,.button-ghost{padding:14px 24px;font-size:1rem;border-radius:12px}
+  .content-wrapper{padding:18px 16px;margin-top:16px}
+  .page-section{padding:18px;border-radius:14px;margin-top:20px}
+  .page-section h2{font-size:1.6rem}
+  .gallery-header{flex-direction:column;align-items:flex-start;gap:8px;margin-bottom:14px}
+  .gallery-intro h2{font-size:1.6rem}
+  .gallery-intro .muted{font-size:0.95rem}
+  .gallery-carousel{padding:10px 2px 16px}
+  .card.netflix{flex:0 0 200px;width:200px;min-width:200px;height:290px;border-radius:6px}
   .card.netflix:first-child{flex:0 0 280px;width:280px;min-width:280px}
-}
-@media (max-width:520px){
-  .navbar{padding:12px 16px;margin:0 auto 18px;border-radius:14px;flex-direction:column;align-items:stretch;gap:14px}
-  .brand{font-size:1.3rem;text-align:center;width:100%}
-  .nav-menu{flex-direction:column;align-items:stretch;gap:10px;width:100%;padding:10px 0;background:rgba(255,255,255,0.04);border-radius:16px;box-shadow:0 12px 26px rgba(0,0,0,0.16);}
-  .nav-menu li{width:100%}
-  .nav-link{width:100%;max-width:none;padding:12px 16px;font-size:1rem;text-align:center;border-radius:14px}
-  .nav-link.active{padding:12px 16px}
-  .hero{padding:28px 20px}
-  .hero-inner{flex-direction:column-reverse;align-items:flex-start;gap:18px}
-  .hero-visual{width:220px}
-  .hero-text h1{font-size:2.1rem}
-  .hero-text p{font-size:1.08rem}
-  .hero-cta{flex-direction:column;align-items:stretch;width:100%}
-  .button-primary,.button-ghost{width:100%;justify-content:center}
-  .content-wrapper{padding:20px;margin-top:18px}
-  .page-section{padding:20px;margin-top:28px;min-height:auto}
-  #gallery.page-section{padding:20px 0 28px}
-  .gallery-strip{padding:0}
-  .modal-overlay{padding:16px 12px}
-  .modal-nav{width:44px;height:44px;font-size:1.4rem}
-  .gallery-carousel{gap:10px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent);mask-image:linear-gradient(90deg,transparent,#000 24px,#000 calc(100% - 24px),transparent)}
-  .card.netflix{flex:0 0 200px;width:200px;min-width:200px;height:300px}
-  .card.netflix:first-child{flex:0 0 260px;width:260px;min-width:260px}
+  .card.netflix .card-meta{padding:14px 12px 12px}
   .card.netflix .card-meta h3{font-size:1rem}
   .card.netflix .card-meta p{font-size:0.8rem}
-  .social-links{gap:12px;flex-wrap:wrap;justify-content:center}
-  .social-btn{width:44px;height:44px}
-  .site-footer .content-wrapper{padding:16px;flex-direction:column;align-items:flex-start;gap:10px}
+  .modal-overlay{padding:16px 52px}
+  .modal-content{border-radius:14px;padding:10px}
+  .modal-nav{width:44px;height:44px;font-size:1.5rem;border-radius:50%}
+  .modal-slider img{max-height:calc(80vh - 60px);border-radius:10px}
+  .modal-close{top:10px;right:10px;width:36px;height:36px}
 }
-@media (max-width:420px){
-  .navbar{padding:10px 12px;border-radius:12px}
+
+@media (max-width:520px){
+  /* Navbar stays horizontal with scroll */
+  .navbar{padding:10px 14px;border-radius:10px;margin-bottom:12px;max-width:100%;width:100%}
   .brand{font-size:1.2rem}
-  .nav-link{max-width:100%;width:100%;font-size:0.95rem;padding:10px 12px}
-  .hero{padding:24px 16px}
-  .hero-inner{gap:14px}
-  .hero-visual{width:200px}
-  .hero-text h1{font-size:1.9rem}
-  .hero-text p{font-size:1rem}
-  .content-wrapper{padding:18px}
-  .page-section{padding:18px;min-height:auto}
-  .gallery-strip{padding:0}
-  .modal-overlay{padding:12px 8px}
-  .modal-nav{width:40px;height:40px;font-size:1.25rem}
-  .card.netflix{flex:0 0 185px;width:185px;min-width:185px;height:280px}
-  .card.netflix:first-child{flex:0 0 240px;width:240px;min-width:240px}
-  .social-links{gap:10px}
-  .form-group input,.form-group textarea{padding:12px 12px}
+  .nav-menu{gap:6px;overflow-x:auto;scrollbar-width:none;-ms-overflow-style:none;padding:4px 2px;background:transparent;box-shadow:none;flex-wrap:nowrap}
+  .nav-menu::-webkit-scrollbar{display:none}
+  .nav-menu li{flex:0 0 auto}
+  .nav-link{padding:7px 12px;font-size:0.85rem;border-radius:8px;white-space:nowrap}
+  .nav-link.active{padding:7px 12px}
+  
+  /* Hero section */
+  .hero{padding:24px 14px}
+  .hero-inner{gap:18px}
+  .hero-visual{width:220px}
+  .logo-scene{width:200px;height:200px;border-radius:22px;box-shadow:0 20px 50px rgba(0,0,0,0.35)}
+  .hero-text{width:100%}
+  .hero-text h1{font-size:2rem;line-height:1.2;margin-bottom:14px}
+  .hero-text p{font-size:1rem;line-height:1.6;margin-bottom:16px}
+  .hero-cta{flex-direction:column;width:100%;max-width:100%;gap:10px}
+  .button-primary,.button-ghost{width:100%;padding:14px 20px;font-size:1rem;border-radius:12px;justify-content:center}
+  
+  /* Content */
+  .content-wrapper{padding:14px;margin-top:12px;border-radius:0}
+  .page-section{padding:16px;border-radius:12px;margin-top:14px;min-height:auto}
+  .page-section h2{font-size:1.45rem}
+  .page-section p{font-size:1rem}
+  
+  /* Gallery */
+  #gallery.page-section{padding:16px 0 20px}
+  .gallery-container{padding:0 12px}
+  .gallery-header{margin-bottom:12px}
+  .gallery-intro h2{font-size:1.45rem}
+  .gallery-intro .muted{font-size:0.9rem}
+  .gallery-carousel{gap:10px;padding:8px 12px 14px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 10px),transparent);mask-image:linear-gradient(90deg,transparent,#000 10px,#000 calc(100% - 10px),transparent)}
+  .card.netflix{flex:0 0 170px;width:170px;min-width:170px;height:250px;border-radius:6px}
+  .card.netflix:first-child{flex:0 0 240px;width:240px;min-width:240px;height:340px}
+  .card.netflix .gallery-photo::before{background:linear-gradient(180deg,transparent 20%,rgba(15,8,5,0.55) 55%,rgba(8,4,2,0.95) 100%)}
+  .card.netflix .gallery-photo::after{top:8px;right:8px;padding:5px 10px;font-size:0.7rem}
+  .card.netflix .card-meta{padding:12px 10px 10px}
+  .card.netflix .card-meta h3{font-size:0.9rem;margin-bottom:4px}
+  .card.netflix .card-meta p{font-size:0.75rem;-webkit-line-clamp:1}
+  
+  /* Modal */
+  .modal-overlay{padding:12px 44px}
+  .modal-content{border-radius:12px}
+  .modal-nav{width:40px;height:40px;font-size:1.3rem;border-radius:50%}
+  .modal-close{top:8px;right:8px;width:32px;height:32px;font-size:1.1rem}
+  .modal-slider img{max-height:calc(75vh - 50px);border-radius:8px}
+  
+  /* Forms */
+  .form-group{margin-bottom:14px}
+  .form-group label{font-size:0.9rem}
+  .form-group input,.form-group textarea{padding:12px 14px;border-radius:10px;font-size:1rem}
+  
+  /* Social */
+  .social-links{justify-content:center;gap:12px;margin-top:16px}
+  .social-btn{width:44px;height:44px;font-size:1.1rem}
+  
+  /* Footer */
+  .site-footer{margin-top:24px;padding:16px 0}
+  .site-footer .content-wrapper{padding:12px 14px;text-align:center}
+  .site-footer div{font-size:0.9rem}
 }
-@media (max-width:360px){
-  .hero{padding:20px 14px}
+
+/* Very small phones */
+@media (max-width:380px){
+  .navbar{padding:8px 12px;border-radius:8px;margin-bottom:10px}
+  .brand{font-size:1.1rem}
+  .nav-link{padding:6px 10px;font-size:0.8rem;border-radius:6px}
+  .hero{padding:20px 12px}
+  .hero-visual{width:190px}
+  .logo-scene{width:175px;height:175px;border-radius:18px}
   .hero-text h1{font-size:1.75rem}
-  .hero-text p{font-size:0.98rem}
-  .hero-inner{gap:12px}
-  .hero-visual{width:180px}
-  .hero-cta{gap:12px}
-  .button-primary,.button-ghost{padding:12px 18px}
-  .nav-link{padding:10px 10px;font-size:0.92rem}
-  .content-wrapper{padding:16px}
-  .page-section{padding:16px}
-  .gallery-strip{padding:0 28px}
-  .card.netflix{flex:0 0 170px;width:170px;min-width:170px;height:260px}
-  .card.netflix:first-child{flex:0 0 220px;width:220px;min-width:220px}
-  .form-group input,.form-group textarea{padding:11px 12px}
-  .social-links{gap:8px}
+  .hero-text p{font-size:0.95rem}
+  .hero-cta{gap:8px}
+  .button-primary,.button-ghost{padding:12px 18px;font-size:0.95rem;border-radius:10px}
+  .content-wrapper{padding:12px;margin-top:10px}
+  .page-section{padding:14px;border-radius:10px;margin-top:12px}
+  .page-section h2{font-size:1.3rem}
+  .gallery-intro h2{font-size:1.3rem}
+  .gallery-carousel{padding:6px 10px 12px}
+  .card.netflix{flex:0 0 150px;width:150px;min-width:150px;height:220px}
+  .card.netflix:first-child{flex:0 0 200px;width:200px;min-width:200px;height:280px}
+  .card.netflix .card-meta h3{font-size:0.82rem}
+  .card.netflix .card-meta p{font-size:0.7rem}
+  .modal-overlay{padding:10px 40px}
+  .modal-nav{width:36px;height:36px;font-size:1.1rem}
+  .social-btn{width:40px;height:40px;font-size:1rem}
+}
+
+@media (max-width:320px){
+  .navbar{padding:8px 10px;border-radius:6px}
+  .brand{font-size:1rem}
+  .nav-link{padding:5px 8px;font-size:0.75rem}
+  .hero{padding:16px 10px}
+  .hero-visual{width:170px}
+  .logo-scene{width:160px;height:160px;border-radius:16px}
+  .hero-text h1{font-size:1.6rem}
+  .hero-text p{font-size:0.9rem}
+  .button-primary,.button-ghost{padding:11px 16px;font-size:0.9rem}
+  .content-wrapper{padding:10px}
+  .page-section{padding:12px;border-radius:8px;margin-top:10px}
+  .card.netflix{flex:0 0 140px;width:140px;min-width:140px;height:200px}
+  .card.netflix:first-child{flex:0 0 180px;width:180px;min-width:180px;height:250px}
+  .modal-overlay{padding:8px 36px}
+  .modal-nav{width:32px;height:32px;font-size:1rem}
 }
