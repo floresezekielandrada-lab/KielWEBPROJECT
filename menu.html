@@ -1,0 +1,61 @@
+<div>
+  <h2>Menu Highlights</h2>
+  <div class="gallery-grid" style="margin-top:12px">
+    <div class="card">
+      <h3>House Latte</h3>
+      <p>Rich espresso, velvety steamed milk, velouté caramel touch.</p>
+      <p style="margin-top:8px;font-weight:700">₱140</p>
+    </div>
+    <div class="card">
+      <h3>Pour-Over (Single Origin)</h3>
+      <p>Bright acidity and floral notes. Brewed to highlight origin character.</p>
+      <p style="margin-top:8px;font-weight:700">₱180</p>
+    </div>
+    <div class="card">
+      <h3>Cold Brew</h3>
+      <p>Slow-steeped cold brew with smooth chocolate undertones.</p>
+      <p style="margin-top:8px;font-weight:700">₱160</p>
+    </div>
+  </div>
+
+  <section class="bookings" style="margin-top:28px">
+    <h2 style="margin-top:0">Bookings & Events</h2>
+    <p style="color:rgba(243,236,230,0.85)">Reserve a table or book our pop-up for your event.</p>
+
+    <div class="card" style="margin-top:14px;padding:18px">
+      <form id="booking-form">
+        <div class="form-group">
+          <label for="bname">Pangalan</label>
+          <input id="bname" name="name" type="text" placeholder="Buong pangalan" required />
+        </div>
+        <div class="form-group">
+          <label for="bdate">Petsa</label>
+          <input id="bdate" name="date" type="date" required />
+        </div>
+        <div class="form-group">
+          <label for="btime">Oras</label>
+          <input id="btime" name="time" type="time" required />
+        </div>
+        <div class="form-group">
+          <label for="bsize">People</label>
+          <input id="bsize" name="size" type="number" min="1" max="50" value="2" required />
+        </div>
+        <div class="form-group">
+          <label for="bcontact">Contact</label>
+          <input id="bcontact" name="contact" type="text" placeholder="Phone or email" required />
+        </div>
+        <button class="button-primary" type="submit">Send Booking Request</button>
+      </form>
+    </div>
+
+    <div class="card" style="margin-top:18px">
+      <h3>Upcoming Events</h3>
+      <ul style="margin:10px 0 0 18px">
+        <li><strong>June 20, 2026</strong> — Local Flavors Night</li>
+        <li><strong>July 5, 2026</strong> — Live Acoustic Session</li>
+        <li><strong>August 14, 2026</strong> — Community Workshop</li>
+      </ul>
+      <p style="margin-top:10px;color:rgba(243,236,230,0.85)">Want us to host an event? Use the booking form above and include "Event" in the message.</p>
+    </div>
+  </section>
+</div>

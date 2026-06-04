@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KapeSalakbay — Travel & Adventure</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand">KapeSalakbay</div>
+    <ul class="nav-menu">
+      <li><button data-page="home" class="nav-link active">Home</button></li>
+      <li><button data-page="about" class="nav-link">About</button></li>
+      <li><button data-page="menu" class="nav-link">Menu</button></li>
+      <li><button data-page="gallery" class="nav-link">Gallery</button></li>
+      <li><button data-page="contact" class="nav-link">Contact</button></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>KapeSaLakbay</h1>
+        <p>Discover KapeSaLakbay — where every journey becomes an unforgettable local adventure.</p>
+        <div class="hero-cta">
+          <button class="button-primary" data-page="menu">Menu</button>
+          <button class="button-ghost" data-page="about">Let's Explore</button>
+        </div>
+      </div>
+
+      <div class="hero-visual" id="hero-visual">
+        <div class="logo-scene">
+          <img src="images/kapesalakbay-logo.jpg" alt="KapeSalakbay logo" />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="content-wrapper">
+    <section id="about" class="page-section">
+      <div>
+        <h2>About KapeSalakbay</h2>
+        <p>Where every cup of coffee brings comfort, connection, and a reason to stay a little longer.</p>
+        <h3 style="margin-top:20px">Our Mission</h3>
+        <p>To serve good coffee and create a place where people can relax and enjoy their time.</p>
+
+        <h3 style="margin-top:18px">Visit Us</h3>
+        <div style="margin:20px 0;border-radius:14px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.45)">
+          <iframe src="https://maps.google.com/maps?q=Labit%20Proper%20Urdaneta%20City%20Pangasinan&z=15&output=embed" width="100%" height="320" style="border:none" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <div class="info-box" style="margin-top:16px">
+          <strong>📍  Labit Proper, Zone 4</strong><br>
+           Urdaneta City, Pangasinan
+        </div>
+
+        <div class="info-box">
+          <strong>🕐 Hours</strong><br>
+          Monday - Sunday: 3:00 PM - 11:00 PM<br>
+        </div>
+
+        <h3 style="margin-top:18px">What We Offer</h3>
+        <ul>
+          <li><strong>Biscoff Latte</strong> — Our signature blend with creamy sweetness</li>
+          <li><strong>Single-Origin Pour-Overs</strong> — Bright, complex flavors from around the world</li>
+          <li><strong>Cold Brew</strong> — Smooth and refreshing, perfect for warm days</li>
+          <li><strong>Pastries & Light Bites</strong> — Locally sourced, freshly baked daily</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="menu" class="page-section">
+      <div>
+        <h2>Menu Highlights</h2>
+        <div class="gallery-grid" style="margin-top:12px">
+          <div class="card">
+            <h3>House Latte</h3>
+            <p>Rich espresso, velvety steamed milk, velouté caramel touch.</p>
+            <p style="margin-top:8px;font-weight:700">₱140</p>
+          </div>
+          <div class="card">
+            <h3>Pour-Over (Single Origin)</h3>
+            <p>Bright acidity and floral notes. Brewed to highlight origin character.</p>
+            <p style="margin-top:8px;font-weight:700">₱180</p>
+          </div>
+          <div class="card">
+            <h3>Cold Brew</h3>
+            <p>Slow-steeped cold brew with smooth chocolate undertones.</p>
+            <p style="margin-top:8px;font-weight:700">₱160</p>
+          </div>
+        </div>
+
+        <section class="bookings" style="margin-top:28px">
+          <h2 style="margin-top:0">Bookings & Events</h2>
+          <p style="color:rgba(243,236,230,0.85)">Reserve a table or book our pop-up for your event.</p>
+
+          <div class="card" style="margin-top:14px;padding:18px">
+            <form id="booking-form">
+              <div class="form-group">
+                <label for="bname">Pangalan</label>
+                <input id="bname" name="name" type="text" placeholder="Buong pangalan" required />
+              </div>
+              <div class="form-group">
+                <label for="bdate">Petsa</label>
+                <input id="bdate" name="date" type="date" required />
+              </div>
+              <div class="form-group">
+                <label for="btime">Oras</label>
+                <input id="btime" name="time" type="time" required />
+              </div>
+              <div class="form-group">
+                <label for="bsize">People</label>
+                <input id="bsize" name="size" type="number" min="1" max="50" value="2" required />
+              </div>
+              <div class="form-group">
+                <label for="bcontact">Contact</label>
+                <input id="bcontact" name="contact" type="text" placeholder="Phone or email" required />
+              </div>
+              <button class="button-primary" type="submit">Send Booking Request</button>
+            </form>
+          </div>
+
+          <div class="card" style="margin-top:18px">
+            <h3>Upcoming Events</h3>
+            <ul style="margin:10px 0 0 18px">
+              <li><strong>June 20, 2026</strong> — Local Flavors Night</li>
+              <li><strong>July 5, 2026</strong> — Live Acoustic Session</li>
+              <li><strong>August 14, 2026</strong> — Community Workshop</li>
+            </ul>
+            <p style="margin-top:10px;color:rgba(243,236,230,0.85)">Want us to host an event? Use the booking form above and include "Event" in the message.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section id="gallery" class="page-section">
+      <div class="gallery-container">
+        <div class="gallery-header">
+          <div class="gallery-intro">
+            <h2>Our First Journey</h2>
+            <p class="muted">Scroll through moments from KapeSalakbay</p>
+          </div>
+        </div>
+        <div class="gallery-strip">
+          <div class="gallery-carousel">
+            <article class="card netflix">
+              <div class="gallery-photo collage" data-gallery="our-first-journey">
+                <img src="images/journey1.jpg" alt="KapeSalakbay — First journey photo 1" />
+                <img src="images/journey2.jpg" alt="KapeSalakbay — First journey photo 2" />
+                <img src="images/journey3.jpg" alt="KapeSalakbay — First journey photo 3" />
+              </div>
+              <div class="card-meta">
+                <h3>Our First Journey</h3>
+                <p>Moments from our first adventure together.</p>
+              </div>
+            </article>
+            <article class="card netflix">
+              <div class="gallery-photo collage" data-gallery="more-memories">
+                <img src="images/journey6.jpg" alt="KapeSalakbay — More memories photo 1" />
+                <img src="images/more-memory-2.jpg" alt="KapeSalakbay — More memories photo 2" />
+                <img src="images/crew1.jpg" alt="KapeSalakbay — Crew team photo" />
+              </div>
+              <div class="card-meta">
+                <h3>More Memories</h3>
+                <p>New moments from the road, the shop, and our crew.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-overlay" id="image-modal" aria-hidden="true">
+        <button class="modal-nav prev" type="button" aria-label="Previous image">‹</button>
+        <div class="modal-content">
+          <button class="modal-close" type="button" aria-label="Close image view">×</button>
+          <div class="modal-slider" aria-live="polite"></div>
+        </div>
+        <button class="modal-nav next" type="button" aria-label="Next image">›</button>
+      </div>
+    </section>
+
+    <section id="contact" class="page-section">
+      <div>
+        <h2>Connect With Us</h2>
+        <p>May tanong? Mag-message sa amin sa Facebook o Messenger, o bisitahin kami!</p>
+
+        <div style="margin-top:24px;padding:20px;background:linear-gradient(135deg,rgba(255,255,255,0.04),rgba(255,255,255,0.01));border-radius:14px;border-left:4px solid var(--accent)">
+          <h3 style="margin-top:0">Quick Message</h3>
+          <div class="social-links">
+            <a href="https://www.facebook.com/kapesalakbay" target="_blank" class="social-btn" title="Facebook">f</a>
+            <a href="https://m.me/kapesalakbay" target="_blank" class="social-btn" title="Messenger">💬</a>
+          </div>
+        </div>
+
+        <h3 style="margin-top:28px">Or Email Us</h3>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Salamat! Ipapadala ang mensahe.');">
+          <div class="form-group">
+            <label for="name">Pangalan</label>
+            <input type="text" id="name" placeholder="Your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="your@email.com" />
+          </div>
+          <div class="form-group">
+            <label for="message">Mensahe</label>
+            <textarea id="message" placeholder="Tell us your thoughts..."></textarea>
+          </div>
+          <button type="submit" class="button-primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="content-wrapper" style="padding:18px 28px;display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap">
+      <div>© <span id="year"></span> KapeSalakbay — All rights reserved.</div>
+      <div style="opacity:0.85">Reservations & Bookings • events@kapesalakbay.local</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
