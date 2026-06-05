@@ -1,0 +1,13 @@
+{
+  "name": "coffee-3d-background",
+  "version": "1.0.0",
+  "description": "3D Coffee Background Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
